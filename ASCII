@@ -1,0 +1,17 @@
+//Suppose that we have an encoding scheme defined by the following mapping:
+//1->'A', 2->'B', 3->'C', ..., 9->'I'
+//Given a three-digit number N as the input, use the above mapping to encode N.
+
+#include <stdio.h>
+int main(void)
+{
+   char a,b,c;
+   scanf("%c%c%c",&a,&b,&c);
+  
+   a+=16;
+   b+=16;
+   c+=16;
+   
+   printf("%c%c%c", a,b,c);
+   return 0;
+}
